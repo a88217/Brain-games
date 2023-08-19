@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93c6917-9038-4b56-87ce-5b24e3290429" name="Changes" comment="refresh">
+    <list default="true" id="a93c6917-9038-4b56-87ce-5b24e3290429" name="Changes" comment="Step 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "a88217"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a02a49a6-38e4-4ed8-8ec5-78da77864038" />
+        <option name="url" value="git@github.com:a88217/java-project-61.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2U9vbvbIXu0YipBs64AsDJshUAi" />
   <component name="ProjectViewState">
@@ -183,11 +196,31 @@
       <option name="project" value="LOCAL" />
       <updated>1692366546393</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Step 4">
+      <option name="closed" value="true" />
+      <created>1692435743795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692435743795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refresh" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh" />
+    <MESSAGE value="Step 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 4" />
   </component>
 </project>
