@@ -7,6 +7,7 @@ public class App {
                 "1 - Greet\n" +
                 "2 - Even\n" +
                 "3 - Calc\n" +
+                "4 - GCD\n" +
                 "0 - Exit");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -20,7 +21,9 @@ public class App {
         if (choice == 3) {
             Calc.calc();
         }
-
+        if (choice == 4) {
+            Gcd.gcd();
+        }
     }
 
 }
