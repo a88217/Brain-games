@@ -9,6 +9,7 @@ public class App {
                 "3 - Calc\n" +
                 "4 - GCD\n" +
                 "5 - Progression\n" +
+                "6 - Prime\n" +
                 "0 - Exit");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -27,6 +28,9 @@ public class App {
         }
         if (choice == 5) {
             Progression.progression();
+        }
+        if (choice == 6) {
+            Prime.prime();
         }
     }
 

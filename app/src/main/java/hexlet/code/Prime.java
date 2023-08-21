@@ -1,13 +1,20 @@
 package hexlet.code;
+
 import java.util.Scanner;
-public class Even {
-    public static void even() {
+
+public class Prime {
+    public static void prime() {
         String userName = Engine.greeting();
         int answerCounter = 0;
         while (answerCounter < 3) {
             int question = (int) (Math.random() * 99) + 1;
-            String correctAnswer = question % 2 == 0 ? "yes" : "no";
-            System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.\n" +
+            String correctAnswer = "yes";
+            for (int i = 2; i < question; i++) {
+                if (question % i == 0) {
+                    correctAnswer = "no";
+                }
+            }
+            System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.\n" +
                     "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             String answer = scanner.next();
@@ -25,5 +32,5 @@ public class Even {
         if (answerCounter == 3) {
             System.out.println("Congratulations, " + userName);
         }
-        }
+    }
 }
