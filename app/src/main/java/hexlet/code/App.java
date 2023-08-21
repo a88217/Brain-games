@@ -8,6 +8,7 @@ public class App {
                 "2 - Even\n" +
                 "3 - Calc\n" +
                 "4 - GCD\n" +
+                "5 - Progression\n" +
                 "0 - Exit");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -23,6 +24,9 @@ public class App {
         }
         if (choice == 4) {
             Gcd.gcd();
+        }
+        if (choice == 5) {
+            Progression.progression();
         }
     }
 
