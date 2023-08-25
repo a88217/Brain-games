@@ -16,8 +16,8 @@ public class Prime {
                     correctAnswer = "no";
                 }
             }
-            System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.\n" +
-                    "Question: " + question);
+            System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.\n"
+                    + "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             String answer = scanner.next();
             System.out.println("Your answer: " + answer);

@@ -19,8 +19,8 @@ public class Gcd {
                     correctAnswer = i;
                 }
             }
-            System.out.println("Find the greatest common divisor of given numbers.\n" +
-                    "Question: " + question);
+            System.out.println("Find the greatest common divisor of given numbers.\n"
+                    + "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             int answer = scanner.nextInt();
             System.out.println("Your answer: " + answer);

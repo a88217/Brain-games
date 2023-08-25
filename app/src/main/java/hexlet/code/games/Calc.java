@@ -24,8 +24,8 @@ public class Calc {
                 default:
                     correctAnswer = num1 * num2;
             }
-            System.out.println("What is the result of the expression?\n" +
-                    "Question: " + question);
+            System.out.println("What is the result of the expression?\n"
+                    + "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             int answer = scanner.nextInt();
             System.out.println("Your answer: " + answer);

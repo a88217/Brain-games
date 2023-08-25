@@ -30,8 +30,8 @@ public class Progression {
                     question = question + " " + nextNumber;
                 }
             }
-            System.out.println("What number is missing in the progression?\n" +
-                    "Question: " + question);
+            System.out.println("What number is missing in the progression?\n"
+                    + "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             int answer = scanner.nextInt();
             System.out.println("Your answer: " + answer);

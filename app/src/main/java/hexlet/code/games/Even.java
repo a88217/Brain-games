@@ -10,8 +10,8 @@ public class Even {
         while (answerCounter < 3) {
             int question = (int) (Math.random() * 99) + 1;
             String correctAnswer = question % 2 == 0 ? "yes" : "no";
-            System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.\n" +
-                    "Question: " + question);
+            System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.\n"
+                    + "Question: " + question);
             Scanner scanner = new Scanner(System.in);
             String answer = scanner.next();
             System.out.println("Your answer: " + answer);
