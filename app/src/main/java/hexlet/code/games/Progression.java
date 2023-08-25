@@ -39,8 +39,8 @@ public class Progression {
                 answerCounter++;
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.\n" +
-                        "Let's try again, " + userName + "!");
+                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.\n"
+                        + "Let's try again, " + userName + "!");
                 answerCounter = 0;
                 break;
             }
