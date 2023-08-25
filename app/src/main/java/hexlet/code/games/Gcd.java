@@ -35,7 +35,7 @@ public class Gcd {
             }
         }
         if (answerCounter == 3) {
-            System.out.println("Congratulations, " + userName);
+            System.out.println("Congratulations, " + userName + "!");
         }
     }
 }
