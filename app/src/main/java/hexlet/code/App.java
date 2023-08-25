@@ -1,4 +1,6 @@
 package hexlet.code;
+import hexlet.code.games.*;
+
 import java.util.Scanner;
 
 public class App {
@@ -14,25 +16,28 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         System.out.println("Your choice: " + choice);
-        if (choice == 1) {
-            Engine.greeting();
-        }
-        if (choice == 2) {
-            Even.even();
-        }
-        if (choice == 3) {
-            Calc.calc();
-        }
-        if (choice == 4) {
-            Gcd.gcd();
-        }
-        if (choice == 5) {
-            Progression.progression();
-        }
-        if (choice == 6) {
-            Prime.prime();
+        switch (choice) {
+            case 1:
+                Engine.greeting();
+                break;
+            case 2:
+                Even.even();
+                break;
+            case 3:
+                Calc.calc();
+                break;
+            case 4:
+                Gcd.gcd();
+                break;
+            case 5:
+                Progression.progression();
+                break;
+            case 6:
+                Prime.prime();
+                break;
+            default:
+                break;
         }
     }
-
 }
 
