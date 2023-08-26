@@ -5,7 +5,8 @@ public class Engine {
         public static void startGame(Game game) {
         String userName = Cli.greeting();
         int answerCounter = 0;
-        while (answerCounter < 3) {
+        final int maxRounds = 3;
+        while (answerCounter < maxRounds) {
             String[] gameData = game.getGameData();
             String gameQuestion = gameData[0];
             String correctAnswer = gameData[1];
@@ -23,7 +24,7 @@ public class Engine {
                 break;
             }
         }
-        if (answerCounter == 3) {
+        if (answerCounter == maxRounds) {
             System.out.println("Congratulations, " + userName + "!");
         }
     }
