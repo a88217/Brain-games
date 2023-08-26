@@ -1,5 +1,6 @@
 package hexlet.code.games;
 import hexlet.code.Game;
+import hexlet.code.Utils;
 public class Gcd implements Game {
     public String getRules() {
         String gameRules = "Find the greatest common divisor of given numbers.\n"
@@ -7,8 +8,9 @@ public class Gcd implements Game {
         return gameRules;
     }
     public String[] getGameData() {
-        int num1 = (int) (Math.random() * 99) + 1;
-        int num2 = (int) (Math.random() * 99) + 1;
+        final int maxNumber = 99;
+        int num1 = Utils.getRandom(maxNumber);
+        int num2 = Utils.getRandom(maxNumber);
         int minNumber = num1 < num2 ? num1 : num2;
         int correctAnswer = 1;
         String stringQuestion = "" + num1 + " " + num2;

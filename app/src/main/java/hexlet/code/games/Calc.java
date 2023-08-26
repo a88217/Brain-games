@@ -1,5 +1,6 @@
 package hexlet.code.games;
 import hexlet.code.Game;
+import hexlet.code.Utils;
 public class Calc implements Game {
 
     public String getRules() {
@@ -8,10 +9,11 @@ public class Calc implements Game {
         return gameRules;
     }
     public String[] getGameData() {
-        int num1 = (int) (Math.random() * 30) + 1;
-        int num2 = (int) (Math.random() * 30) + 1;
-        int operatorIndex = (int) (Math.random() * 3);
-        String[] operators = {"+", "-", "*"};
+        final int maxNumber = 30;
+        int num1 = Utils.getRandom(maxNumber);
+        int num2 = Utils.getRandom(maxNumber);
+        final String[] operators = {"+", "-", "*"};
+        int operatorIndex = (int) (Math.random() * operators.length);
         String stringQuestion = "" + num1 + " " + operators[operatorIndex] + " " + num2;
         int correctAnswer = 0;
         switch (operatorIndex) {

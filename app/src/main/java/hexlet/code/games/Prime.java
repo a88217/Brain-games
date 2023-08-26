@@ -1,5 +1,6 @@
 package hexlet.code.games;
 import hexlet.code.Game;
+import hexlet.code.Utils;
 public class Prime implements Game {
     public String getRules() {
         String gameRules = "Answer 'yes' if given number is prime. Otherwise answer 'no'.\n"
@@ -7,7 +8,8 @@ public class Prime implements Game {
         return gameRules;
     }
     public String[] getGameData() {
-        int question = (int) (Math.random() * 99) + 1;
+        final int maxNumber = 99;
+        int question = Utils.getRandom(maxNumber);
         String correctAnswer = "yes";
         for (int i = 2; i < question; i++) {
             if (question % i == 0) {
