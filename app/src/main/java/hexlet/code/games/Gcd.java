@@ -1,7 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
-public class Gcd implements Game {
+public final class Gcd implements Game {
     public static int findGCD(int num1, int num2) {
         int minNumber = num1 < num2 ? num1 : num2;
         int correctAnswer = 1;

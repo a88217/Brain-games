@@ -1,7 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
-public class Prime implements Game {
+public final class Prime implements Game {
     public static String ifPrime(int num) {
         String answer = "yes";
         for (int i = 2; i < num; i++) {

@@ -1,7 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
-public class Calc implements Game {
+public final class Calc implements Game {
 
     public String getRules() {
         String gameRules = "What is the result of the expression?\n"

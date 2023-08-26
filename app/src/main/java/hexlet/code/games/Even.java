@@ -1,7 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
-public class Even implements Game {
+public final class Even implements Game {
     public static boolean ifEven(int num) {
         return num % 2 == 0;
     }

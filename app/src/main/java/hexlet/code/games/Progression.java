@@ -1,7 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
-public class Progression implements Game {
+public final class Progression implements Game {
     public String getRules() {
         String gameRules = "What number is missing in the progression?\n"
                 + "Question: ";
