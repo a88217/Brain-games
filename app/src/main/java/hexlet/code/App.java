@@ -20,29 +20,24 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         System.out.println("Your choice: " + choice);
-        // final Integer EVEN = 2;
-        // final Integer CALC = 3;
-        // final Integer GCD = 4;
-        // final Integer PROGRESSION = 5;
-        // final Integer PRIME = 6;
         switch (choice) {
             case 1:
-                Engine.greeting();
+                Cli.greeting();
                 break;
             case 2:
-                Even.even();
+                Engine.startGame(new Even());
                 break;
             case 3:
-                Calc.calc();
+                Engine.startGame(new Calc());
                 break;
             case 4:
-                Gcd.gcd();
+                Engine.startGame(new Gcd());
                 break;
             case 5:
-                Progression.progression();
+                Engine.startGame(new Progression());
                 break;
             case 6:
-                Prime.prime();
+                Engine.startGame(new Prime());
                 break;
             default:
                 break;
