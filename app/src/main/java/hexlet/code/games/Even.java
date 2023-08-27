@@ -6,9 +6,8 @@ public final class Even implements Game {
         return num % 2 == 0;
     }
     public String getRules() {
-        String gameRules = "Answer 'yes' if the number is even, otherwise answer 'no'.\n"
+        return "Answer 'yes' if the number is even, otherwise answer 'no'.\n"
                 + "Question: ";
-        return gameRules;
     }
     public String[] getGameData() {
         final int maxNumber = 99;
