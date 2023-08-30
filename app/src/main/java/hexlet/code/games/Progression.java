@@ -18,19 +18,15 @@ public final class Progression implements Game {
         int progressionStep = Utils.getRandom(maxProgressionStep);
         int correctAnswer = 1;
         String question = "" + startNumber;
-        if (missingNumber == 1) {
-            question = "..";
-            correctAnswer = startNumber;
-        }
         var result = new StringBuilder(question);
-        for (int i = 2; i <= progressionLength; i++) {
-            if (i == missingNumber) {
-                result.append(" ..");
-                nextNumber += progressionStep;
-                correctAnswer = nextNumber;
+        for (int i = 1; i <= progressionLength; i++) {
+            if (i != missingNumber) {
+                result.append(startNumber).append(" ");
+                startNumber += progressionStep;
             } else {
-                nextNumber += progressionStep;
-                result.append(" " + nextNumber);
+                result.append("..").append(" ");
+                correctAnswer = startNumber;
+                startNumber += progressionStep;
             }
         }
         String stringQuestion = result.toString();
