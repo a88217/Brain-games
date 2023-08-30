@@ -17,7 +17,7 @@ public final class Progression implements Game {
         int nextNumber = startNumber;
         int progressionStep = Utils.getRandom(maxProgressionStep);
         int correctAnswer = 1;
-        String question = "" + startNumber;
+        String question = "";
         var result = new StringBuilder(question);
         for (int i = 1; i <= progressionLength; i++) {
             if (i != missingNumber) {
