@@ -4,6 +4,9 @@ import hexlet.code.Utils;
 public final class Prime implements Game {
     public static boolean isPrime(int num) {
         boolean answer = true;
+        if (num == 1) {
+            answer = false;
+        }
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 answer = false;
