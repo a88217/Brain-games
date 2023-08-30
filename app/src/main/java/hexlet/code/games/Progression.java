@@ -3,11 +3,10 @@ import hexlet.code.Game;
 import hexlet.code.Utils;
 public final class Progression implements Game {
     public String getRules() {
-        String gameRules = "What number is missing in the progression?\n"
-                + "Question: ";
+        String gameRules = "What number is missing in the progression?";
         return gameRules;
     }
-    public String[] getGameData() {
+    public String[] getData() {
         final int minProgressionLength = 5;
         final int maxProgressionLength = 10;
         final int maxProgressionStep = 10;

@@ -13,16 +13,15 @@ public final class Gcd implements Game {
         return correctAnswer;
     }
     public String getRules() {
-        String gameRules = "Find the greatest common divisor of given numbers.\n"
-                + "Question: ";
+        String gameRules = "Find the greatest common divisor of given numbers.";
         return gameRules;
     }
-    public String[] getGameData() {
+    public String[] getData() {
         final int maxNumber = 99;
         int num1 = Utils.getRandom(maxNumber);
         int num2 = Utils.getRandom(maxNumber);
         int correctAnswer = findGCD(num1, num2);
-        String stringQuestion = "" + num1 + " " + num2;
+        String stringQuestion = num1 + " " + num2;
         String[] gameData = {stringQuestion, Integer.toString(correctAnswer)};
         return gameData;
     }
