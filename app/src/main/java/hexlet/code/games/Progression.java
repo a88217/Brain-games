@@ -2,20 +2,19 @@ package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
 public final class Progression implements Game {
+    public static final Integer MINPROGRESSIONLENGH = 5;
+    public static final Integer MAXPROGRESSIONLENGH = 10;
+    public static final Integer MAXPROGRESSIONSTEP = 10;
+    public static final Integer MAXSTARTNUMBER = 20;
     public String getRules() {
         String gameRules = "What number is missing in the progression?";
         return gameRules;
     }
     public String[] getData() {
-        final int minProgressionLength = 5;
-        final int maxProgressionLength = 10;
-        final int maxProgressionStep = 10;
-        final int maxStartNumber = 20;
-        int progressionLength = (int) (Math.random() * maxProgressionLength) + minProgressionLength;
+        int progressionLength = Utils.getRandomLength(MINPROGRESSIONLENGH, MAXPROGRESSIONLENGH);
         int missingNumber = Utils.getRandom(progressionLength);
-        int startNumber = Utils.getRandom(maxStartNumber);
-        int nextNumber = startNumber;
-        int progressionStep = Utils.getRandom(maxProgressionStep);
+        int startNumber = Utils.getRandom(MAXSTARTNUMBER);
+        int progressionStep = Utils.getRandom(MAXPROGRESSIONSTEP);
         int correctAnswer = 1;
         String question = "";
         var result = new StringBuilder(question);

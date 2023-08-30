@@ -2,6 +2,7 @@ package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
 public final class Prime implements Game {
+    public static final Integer MAXNUMBER = 99;
     public static boolean isPrime(int num) {
         boolean answer = true;
         if (num == 1) {
@@ -19,8 +20,7 @@ public final class Prime implements Game {
         return gameRules;
     }
     public String[] getData() {
-        final int maxNumber = 99;
-        int question = Utils.getRandom(maxNumber);
+        int question = Utils.getRandom(MAXNUMBER);
         String correctAnswer = isPrime(question) ? "yes" : "no";
         String stringQuestion = Integer.toString(question);
         String[] gameData = {stringQuestion, correctAnswer};

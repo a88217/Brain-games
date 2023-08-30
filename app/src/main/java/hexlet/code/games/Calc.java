@@ -2,15 +2,15 @@ package hexlet.code.games;
 import hexlet.code.Game;
 import hexlet.code.Utils;
 public final class Calc implements Game {
+    public static final Integer MAXNUMBER = 30;
 
     public String getRules() {
         String gameRules = "What is the result of the expression?";
         return gameRules;
     }
     public String[] getData() {
-        final int maxNumber = 30;
-        int num1 = Utils.getRandom(maxNumber);
-        int num2 = Utils.getRandom(maxNumber);
+        int num1 = Utils.getRandom(MAXNUMBER);
+        int num2 = Utils.getRandom(MAXNUMBER);
         final String[] operators = {"+", "-", "*"};
         int operatorIndex = (int) (Math.random() * operators.length);
         String stringQuestion = num1 + " " + operators[operatorIndex] + " " + num2;
