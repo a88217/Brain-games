@@ -4,19 +4,15 @@ import java.util.Scanner;
 public class Engine {
     public static final Integer QUESTION = 0;
     public static final Integer ANSWER = 1;
-    public static String greeting() {
-        Scanner scanner = new Scanner(System.in);
+    public static final Integer MAXROUNDS = 3;
+    public static void startGame(Game game) {
+        Scanner name = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!");
         System.out.println("May I have your name? ");
-        String userName = scanner.next();
+        String userName = name.next();
         System.out.println("Hello, " + userName + "!");
-        return userName;
-    }
-        public static void startGame(Game game) {
-        String userName = greeting();
         int answerCounter = 0;
-        final int maxRounds = 3;
-        while (answerCounter < maxRounds) {
+        while (answerCounter < MAXROUNDS) {
             String[] gameData = game.getData();
             String gameQuestion = gameData[QUESTION];
             String correctAnswer = gameData[ANSWER];
@@ -31,11 +27,10 @@ public class Engine {
             } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.\n"
                         + "Let's try again, " + userName + "!");
-                answerCounter = 0;
                 break;
             }
         }
-        if (answerCounter == maxRounds) {
+        if (answerCounter == MAXROUNDS) {
             System.out.println("Congratulations, " + userName + "!");
         }
     }
