@@ -3,7 +3,7 @@ import hexlet.code.Game;
 import hexlet.code.Utils;
 public final class Calc implements Game {
     public static final Integer MAXNUMBER = 30;
-    public static final String[] OPERATORS={"+", "-", "*"};
+    public static final String[] OPERATORS = {"+", "-", "*"};
 
     public String getRules() {
         String gameRules = "What is the result of the expression?";
