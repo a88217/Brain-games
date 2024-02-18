@@ -6,9 +6,9 @@
 # Brain games
 #### About this project
 
-###This is a command line utility that suggests to user to play one of five mini-games. Every game contains three questions. When user answers all these questions right, he wins. Otherway, if he makes a mistake, he loses the game.
+### This is a command line utility that suggests to user to play one of five mini-games. Every game contains three questions. When user answers all these questions right, he wins. Otherway, if he makes a mistake, he loses the game.
 
-###Below you can see how every game works.
+### Below you can see how every game works.
 
 ## Asciinema Even
 The game shows to user random integer numbers. User must answer "yes" if this number is even and "no" if it is odd.
